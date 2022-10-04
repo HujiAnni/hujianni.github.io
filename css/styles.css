@@ -95,6 +95,7 @@ hr {
   background-color: #F1EFDC;
   padding-top: 100px;
   visibility:hidden;
+  display:none;
 }
 
 .middle-container {

@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  /*90px = 562.5% or 5.625rem*/
+  margin: 50px auto 0 auto;
+  color: #42032C;
+  /* line-height: 2; */
+}
+
+h2 {
+  font-size: 2.5rem;
+  /*90px = */
+  color: #42032C;
+  font-weight: normal;
+  font-family: 'Amaranth', sans-serif;
+}
+
+h3 {
+  color: #874C62;
+}
+
+a {
+  color: #874C62;
+  text-decoration: none;
+}
+
+hr {
+  border-style: none;
+  border-style: dotted none none;
+  border-color: #D36B00;
+  border-width: 5px;
+  width: 5%;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.profile-img {
+  width: 20%;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.technical-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.business-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.intro {
+  font-family: 'Amaranth', sans-serif;
+}
+
+.intro-sent {
+  width: 33%;
+  color: #181818;
+  margin: 0 auto 0 auto;
+  line-height: 2;
+}
+
+.web {
+  text-decoration: underline;
+}
+
+.above {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+}
+
+.below {
+  position: absolute;
+  left: 200px;
+  bottom: 50px;
+}
+
+.top-container {
+  align-content: center;
+  background-color: #F1EFDC;
+  padding-top: 100px;
+  visibility:hidden;
+}
+
+.middle-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.invite {
+  width: 50%;
+  color: #181818;
+  margin: 0 auto 0 auto;
+  line-height: 2;
+}
+
+.persuade {
+  margin-top:50px;
+  margin-bottom:50px;
+}
+
+.btn {
+  background: #42032C;
+  background-image: linear-gradient(top, #42032C, #411530);
+  background-image: linear-gradient(to bottom, #42032C, #411530);
+  border-radius: 8px;
+  font-family: 'Amaranth', sans-serif;
+  color: #F1EFDC;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn:hover {
+  background: #874C62;
+  background-image: linear-gradient(top, #874C62, #513252);
+  background-image: linear-gradient(to bottom, #874C62, #513252);
+  text-decoration: none;
+}
+
+.bottom-container {
+  background-color: #FFAE6D;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-link {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.copyright {
+  color: #F1EFDC;
+  margin-top:20px;
+
+}

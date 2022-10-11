@@ -102,6 +102,11 @@ hr {
   padding-bottom: 50px;
 }
 
+.greeting {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.5rem;
+}
+
 .invite {
   width: 50%;
   color: #181818;

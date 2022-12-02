@@ -42,7 +42,9 @@ hr {
 
 
 /* Grids */
-.content {
+
+/* Profile */
+.profile {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -56,6 +58,7 @@ hr {
 
 .profile-img {
   width: 50%;
+  min-width: 24rem;
   filter: brightness(108%) saturate(90%);
   grid-area: img;
   margin: 5% auto;
@@ -66,26 +69,27 @@ hr {
 }
 
 @keyframes profile-img-slide {
-  from {top: -12.5em;}
+  from {top: -25%;}
   to {top: 0;}
 }
 
 .profile-title {
   grid-area: title;
   text-align: left;
-  margin-bottom: 5%;
+  margin: 0 0 5% 10%;
   position: relative;
   animation-name: profile-title-slide;
   animation-duration: 1s;  
 }
 
 @keyframes profile-title-slide {
-  from {left: 25em;}
+  from {left: 25%;}
   to {left: 0;}
 }
 
 .profile-txt {
   grid-area: txt;
+  margin: 0 0 5% 10%;
   position: relative;
   animation-name: profile-txt-in;
   animation-duration: 1s;  
@@ -99,9 +103,6 @@ hr {
 
 
 /* Texts */
-.intro {
-  font-family: 'Amaranth', sans-serif;
-}
 
 .intro-sent {
   width: 75%;
@@ -109,17 +110,26 @@ hr {
   line-height: 2;
   text-align: left;
 }
+.sub-title {
+  margin: 5.625rem auto 0 auto;
+
+}
 
 .skill-row {
-  width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
+  /* width: 50%; */
+  margin: 5.625rem auto 5.625rem auto;
+  text-align: center;
   line-height: 2;
 }
 
+.technical-desc 
+.business-desc {
+  visibility: collapse;
+
+}
 
 /* Images  */
-.technical-img {
+/* .technical-img {
   width: 25%;
   float: left;
   margin-right: 30px;
@@ -129,6 +139,12 @@ hr {
   width: 25%;
   float: right;
   margin-left: 30px;
+} */
+
+.technical-img
+.business-img {
+  width: 25%;
+  margin-bottom: 2.5rem;
 }
 
 .invite {
@@ -171,19 +187,19 @@ hr {
 .top-container {
   align-content: center;
   background-color: #FFEDDB;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
 }
 
 .middle-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
 }
 
 .bottom-container {
   background-color: #FFAE6D;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
 }
 
 
@@ -195,6 +211,50 @@ hr {
 
 .copyright {
   color: #F1EFDC;
-  margin-top:20px;
+  margin-top:1.25rem;
 
 }
+
+
+/* Media Responsive */
+@media screen and (max-width: 768px) {
+  .top-container {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    margin: auto;
+  }
+
+  .profile {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.75fr 0.5fr;
+      grid-template-areas:
+      'img'
+      'title'
+      'txt'
+      'txt';
+   }
+
+   .profile-img {
+    min-width: 24rem;
+    margin: 2.5% auto;
+   }
+
+   .profile-title {
+    text-align: center;
+    margin: 2.5% auto;
+   }
+
+   .profile-txt{
+    margin: 0;  
+    text-align: center;   
+ 
+  }
+
+   .intro-sent {
+    text-align: center;   
+    margin: auto;
+  }
+
+}
+
+

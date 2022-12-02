@@ -121,12 +121,16 @@ hr {
   text-align: center;
   line-height: 2;
 }
+/* 
+.desc {
+  visibility:hidden;
+} */
 
-.technical-desc 
+.technical-desc,
 .business-desc {
-  visibility: collapse;
-
+  margin: 15% auto;
 }
+
 
 /* Images  */
 /* .technical-img {

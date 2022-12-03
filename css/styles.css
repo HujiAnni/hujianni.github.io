@@ -1,9 +1,10 @@
-body, p {
+body {
   margin: 0;
   text-align: center;
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
+
 
 h1 {
   font-family: 'Sacramento', cursive;
@@ -51,15 +52,28 @@ hr {
   color:#F7E6B5;
   font-family: 'Amaranth', sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 0.05em;
 }
 
 .nav-link-custom {
   color:#F1EFDC;
   font-family: 'Lato', sans-serif;
-
 }
+
+.dropdown-custom {
+  background-color: #694E4E;
+}
+
+.dropdown-item-custom {
+  color: #F1EFDC;
+}
+
+.dropdown-item-custom:hover {
+  background-color: #F7E6B5;
+  color:#694E4E;
+}
+
 
 /* Grids */
 
@@ -129,6 +143,7 @@ hr {
   color: #181818;
   line-height: 2;
   text-align: left;
+  font-size: 20px;
 }
 
 .sub-title {
@@ -221,9 +236,9 @@ hr {
   margin-left: 30px;
 } */
 
-.technical-img
+.technical-img,
 .business-img {
-  width: 25%;
+  width: 50%;
   margin-bottom: 2.5rem;
 }
 
@@ -342,6 +357,7 @@ hr {
    .intro-sent {
     text-align: center;   
     margin: auto;
+    font-size: 18px;
   }
 
 }

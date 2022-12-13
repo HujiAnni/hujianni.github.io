@@ -97,47 +97,46 @@ hr {
   grid-area: img;
   margin: 5% auto;
   position: relative;
-  animation-name: profile-img-slide;
+  /* animation-name: profile-img-slide;
   animation-duration: 1s;  
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
-@keyframes profile-img-slide {
+/* @keyframes profile-img-slide {
   from {top: -25%;}
   to {top: 0;}
-}
+} */
 
 .profile-title {
   grid-area: title;
   text-align: left;
   margin: 0 0 5% 10%;
   position: relative;
-  animation-name: profile-title-slide;
-  animation-duration: 1s;  
+  /* animation-name: profile-title-slide;
+  animation-duration: 1s;   */
 }
-
+/* 
 @keyframes profile-title-slide {
   from {left: 25%;}
   to {left: 0;}
-}
+} */
 
 .profile-txt {
   grid-area: txt;
   margin: 0 0 5% 10%;
   position: relative;
-  animation-name: profile-txt-in;
-  animation-duration: 1s;  
+  /* animation-name: profile-txt-in;
+  animation-duration: 1s;   */
 }
 
-@keyframes profile-txt-in {
+/* @keyframes profile-txt-in {
   from {opacity: 0;}
   to {opacity: 1;}
-}
+} */
 
 
 
 /* Texts */
-
 .intro-sent {
   width: 75%;
   color: #181818;

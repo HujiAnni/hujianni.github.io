@@ -26,8 +26,20 @@ const portfolios = {
     demo_link: ["", "", "", ""]
 }
 
+const dropDown = document.querySelector(".dropdown-menu");
+
 
 // Dynamic Nav Bar - Portfolios
+
+for (let i = 0; i < portfolios.name.length; i++){
+    let dropDownItem = document.createElement("li");
+    let dropDownItemLink = document.createElement("a");
+    dropDownItemLink.classList.add("dropdown-item", "dropdown-item-custom");
+    dropDownItemLink.href = `#${portfolios.id[i]}`;
+    dropDownItemLink.innerHTML = portfolios.name[i];
+    dropDownItem.appendChild(dropDownItemLink);
+    dropDown.appendChild(dropDownItem);
+}
 
 
 // Add skills to html by DOM

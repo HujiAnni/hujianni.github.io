@@ -1,15 +1,33 @@
 const skills = {
-        name: ["Data Science","Web Development","CRM & CDP", "Digital Marketing"],
-        id: ["data-science","web-development","crm","digital-marketing"],
-        desc: ["Generate data-driven visual business insights and action plans by exploratory and predictive analysis with SQL, Python, and R, and data visualization using Tableau, PowerBI, and matplotlib/seaborn.",
-        "Build and design front-end and back-end of interactive and engaging web apps with personalized treatment.",
-        "Manage multiple projects on omnichannel clienteling and multimedia customer journey building covering acquisition, retention, and reactivation.",
-        "Execute creative content and digital strategy on multiple digital channels, paid and generic, to drive relevant traffic and conversion."],
-        img_src: ["https://media4.giphy.com/media/SvEUbsayyUlcPm41Tl/200w.webp?cid=ecf05e47iaq4b3jab1tydb1pwh48jz8pxyp1hd8j67rrvr5s&rid=200w.webp&ct=s",
-        "https://media4.giphy.com/media/juua9i2c2fA0AIp2iq/200w.webp?cid=ecf05e47339jebyt5rl5bqs2fpbzublve6xv1pn729rpxxev&rid=200w.webp&ct=s",
-        "https://media0.giphy.com/media/BoC8P5mobclKtxGgPk/200.webp?cid=ecf05e47go9n40aox0w9skrnym9e1yiup4gbvticcoz8gucf&rid=200.webp&ct=s",
-        "https://media2.giphy.com/media/gxr0SeRNwNr4wZpEz5/200w.webp?cid=ecf05e47nffiil12odaab5elachskol3gq4msk9svwbbujgw&rid=200w.webp&ct=s"]
+    name: ["Data Science","Web Development","CRM & CDP", "Digital Marketing"],
+    id: ["data-science","web-development","crm","digital-marketing"],
+    desc: ["Generate data-driven visual business insights and action plans by exploratory and predictive analysis with SQL, Python, and R, and data visualization using Tableau, PowerBI, and matplotlib/seaborn.",
+    "Build and design front-end and back-end of interactive and engaging web apps with personalized treatment.",
+    "Manage multiple projects on omnichannel clienteling and multimedia customer journey building covering acquisition, retention, and reactivation.",
+    "Execute creative content and digital strategy on multiple digital channels, paid and generic, to drive relevant traffic and conversion."],
+    img_src: ["https://media4.giphy.com/media/SvEUbsayyUlcPm41Tl/200w.webp?cid=ecf05e47iaq4b3jab1tydb1pwh48jz8pxyp1hd8j67rrvr5s&rid=200w.webp&ct=s",
+    "https://media4.giphy.com/media/juua9i2c2fA0AIp2iq/200w.webp?cid=ecf05e47339jebyt5rl5bqs2fpbzublve6xv1pn729rpxxev&rid=200w.webp&ct=s",
+    "https://media0.giphy.com/media/BoC8P5mobclKtxGgPk/200.webp?cid=ecf05e47go9n40aox0w9skrnym9e1yiup4gbvticcoz8gucf&rid=200.webp&ct=s",
+    "https://media2.giphy.com/media/gxr0SeRNwNr4wZpEz5/200w.webp?cid=ecf05e47nffiil12odaab5elachskol3gq4msk9svwbbujgw&rid=200w.webp&ct=s"]
 }
+
+const portfolios = {
+    name: ["NYC Crime Map","I Have My EYE On You","PacMan Factory", "Horse Race Simulation"],
+    id: ["map","eye","facotry","horse-race"],
+    desc: ["NYC Crime Map description",
+    "EYE description",
+    "Factory description",
+    "Horse Race Simulation description"],
+    img_src: ["https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg"],
+    project_link: ["", "", "", ""],
+    demo_link: ["", "", "", ""]
+}
+
+
+// Dynamic Nav Bar - Portfolios
 
 
 // Add skills to html by DOM
@@ -57,21 +75,6 @@ middleContainer.prepend(skillContainer);
 
 
 // Add portfolios to html by DOM
-const portfolios = {
-    name: ["NYC Crime Map","I Have My EYE On You","PacMan Factory", "Horse Race Simulation"],
-    id: ["map","eye","facotry","horse-race"],
-    desc: ["NYC Crime Map description",
-    "EYE description",
-    "Factory description",
-    "Horse Race Simulation description"],
-    img_src: ["https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
-    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
-    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
-    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg"],
-    project_link: ["", "", "", ""],
-    demo_link: ["", "", "", ""]
-}
-
 let portfolioContainer = document.createElement("div");
 let portfolioBreak = document.createElement("hr");
 portfolioBreak.setAttribute("id","portfolios");
@@ -133,4 +136,29 @@ for (let i = 0; i < portfolios.name.length; i++){
     portfolioFlipCardContainer.appendChild(portfolioFlipCardGrid);
 }
 portfolioContainer.appendChild(portfolioFlipCardContainer);
-middleContainer.append(portfolioContainer)
+middleContainer.append(portfolioContainer);
+
+
+// Get in Touch section to html by DOM
+let contactId = document.createElement("hr");
+contactId.setAttribute("id","contact");
+
+let contactContainer = document.createElement("div");
+contactContainer.classList.add("contact-me");
+
+let contactTitle = document.createElement("h2");
+contactTitle.innerHTML = "Get In Touch";
+let contactConversation = document.createElement("h3");
+contactConversation.classList.add("persuade");
+contactConversation.innerHTML = "If you like challenges and continual growth as much as I do..."
+let contactText = document.createElement("p");
+contactText.classList.add("invite");
+contactText.innerHTML = "Let's connect and chat about where we were at and where we are heading to! It's always good to have more people on our support teams to chase whatever dreams we have!";
+let contactBtn = document.createElement("a");
+contactBtn.classList.add("btn");
+contactBtn.href = "mailto:jh2585@cornell.edu";
+contactBtn.innerHTML = "CONTACT ME";
+
+contactContainer.append(contactTitle, contactConversation, contactText, contactBtn)
+
+middleContainer.append(contactId, contactContainer)

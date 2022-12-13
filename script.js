@@ -54,3 +54,83 @@ skillDiv.append(skillTitle,skillBootstrapGridContainer);
 skillContainer.append(idBreak,skillDiv);
 
 middleContainer.prepend(skillContainer);
+
+
+// Add portfolios to html by DOM
+const portfolios = {
+    name: ["NYC Crime Map","I Have My EYE On You","PacMan Factory", "Horse Race Simulation"],
+    id: ["map","eye","facotry","horse-race"],
+    desc: ["NYC Crime Map description",
+    "EYE description",
+    "Factory description",
+    "Horse Race Simulation description"],
+    img_src: ["https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg"],
+    project_link: ["", "", "", ""],
+    demo_link: ["", "", "", ""]
+}
+
+let portfolioContainer = document.createElement("div");
+let portfolioBreak = document.createElement("hr");
+portfolioBreak.setAttribute("id","portfolios");
+portfolioContainer.appendChild(portfolioBreak);
+let portfolioTitle = document.createElement("h2");
+portfolioTitle.classList.add("sub-title");
+portfolioTitle.innerHTML = "My Portfolios";
+portfolioContainer.appendChild(portfolioTitle);
+
+let portfolioFlipCardContainer = document.createElement("div");
+portfolioFlipCardContainer.classList.add("row", "portfolio")
+
+for (let i = 0; i < portfolios.name.length; i++){
+    let portfolioFlipCardGrid = document.createElement("div");
+    portfolioFlipCardGrid.classList.add("col-lg-3", "col-md-6", "col-sm-12");
+    portfolioFlipCardGrid.setAttribute("id",`${portfolios.id[i]}`)
+
+    let portfolioFlipCard = document.createElement("div");
+    portfolioFlipCard.classList.add("card","flip-card");
+
+    let portfolioFlipCardInner = document.createElement("div");
+    portfolioFlipCardInner.classList.add("flip-card-inner");
+
+    let portfolioFlipCardFront = document.createElement("div");
+    portfolioFlipCardFront.classList.add("card-body", "flip-card-front")
+    let portfolioImg = document.createElement("img");
+    portfolioImg.src = portfolios.img_src[i];
+    portfolioImg.classList.add("card-img-top");
+    portfolioImg.alt = `${portfolios.name[i]} imaage`;
+    let portfolioFlipCardFrontTitle = document.createElement("h5");
+    portfolioFlipCardFrontTitle.innerHTML = portfolios.name[i];
+    portfolioFlipCardFrontTitle.classList.add("card-title");
+    portfolioFlipCardFront.append(portfolioImg,portfolioFlipCardFrontTitle)
+
+    let portfolioFlipCardBack = document.createElement("div");
+    portfolioFlipCardBack.classList.add("card-body", "flip-card-back");
+    let portfolioFlipCardBackTitle = document.createElement("h5");
+    portfolioFlipCardBackTitle.innerHTML = portfolios.name[i];
+    portfolioFlipCardBackTitle.classList.add("card-title")
+    let portfolioFlipCardBackText = document.createElement("p");
+    portfolioFlipCardBackText.innerHTML = portfolios.desc[i];
+    portfolioFlipCardBackText.classList.add("card-text");
+    let linkProject = document.createElement("a");
+    linkProject.href = portfolios.project_link[i];
+    linkProject.classList.add("card-link");
+    linkProject.innerHTML = "View Project";
+    let linkDemo = document.createElement("a");
+    linkDemo.href = portfolios.demo_link[i];
+    linkDemo.classList.add("card-link");
+    linkDemo.innerHTML = "Get Demo";
+    portfolioFlipCardBack.append(portfolioFlipCardBackTitle,portfolioFlipCardBackText,linkProject,linkDemo);
+
+    portfolioFlipCardInner.append(portfolioFlipCardFront,portfolioFlipCardBack);
+
+    portfolioFlipCard.appendChild(portfolioFlipCardInner);
+
+    portfolioFlipCardGrid.appendChild(portfolioFlipCard);
+
+    portfolioFlipCardContainer.appendChild(portfolioFlipCardGrid);
+}
+portfolioContainer.appendChild(portfolioFlipCardContainer);
+middleContainer.append(portfolioContainer)

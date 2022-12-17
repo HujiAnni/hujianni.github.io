@@ -45,7 +45,7 @@ for (let i = 0; i < portfolios.name.length; i++){
 // Add skills to html by DOM
 let middleContainer = document.querySelector(".middle-container");
 
-let skillContainer = document.createElement("div");
+let skillContainer = document.querySelector(".skill-container");
 let idBreak = document.createElement('br');
 idBreak.setAttribute("id","skills");
 skillContainer.appendChild(idBreak);
@@ -58,7 +58,7 @@ skillTitle.innerHTML = "My skills";
 let skillBootstrapGridContainer = document.createElement("div");
 skillBootstrapGridContainer.classList.add("container", "text-center")
 let skillBootstrapGrid = document.createElement("div");
-skillBootstrapGrid.classList.add("row", "row-cols-1", "row-cols-sm-2", "row-cols-md-4")
+skillBootstrapGrid.classList.add("row", "row-cols-lg-4", "row-cols-md-2","row-cols-sm-1","row-cols-1")
 
 for (let i = 0; i < skills.name.length; i++) {
     let skill = document.createElement("div");
@@ -87,7 +87,7 @@ middleContainer.prepend(skillContainer);
 
 
 // Add portfolios to html by DOM
-let portfolioContainer = document.createElement("div");
+let portfolioContainer = document.querySelector(".portfolio-container");
 let portfolioBreak = document.createElement("hr");
 portfolioBreak.setAttribute("id","portfolios");
 portfolioContainer.appendChild(portfolioBreak);
@@ -101,7 +101,7 @@ portfolioFlipCardContainer.classList.add("row", "portfolio")
 
 for (let i = 0; i < portfolios.name.length; i++){
     let portfolioFlipCardGrid = document.createElement("div");
-    portfolioFlipCardGrid.classList.add("col-lg-3", "col-md-6", "col-sm-12");
+    portfolioFlipCardGrid.classList.add("col-lg-6", "col-md-6", "col-sm-12");
     portfolioFlipCardGrid.setAttribute("id",`${portfolios.id[i]}`)
 
     let portfolioFlipCard = document.createElement("div");
@@ -155,7 +155,7 @@ middleContainer.append(portfolioContainer);
 let contactId = document.createElement("hr");
 contactId.setAttribute("id","contact");
 
-let contactContainer = document.createElement("div");
+let contactContainer = document.querySelector(".contact-container");
 contactContainer.classList.add("contact-me");
 
 let contactTitle = document.createElement("h2");

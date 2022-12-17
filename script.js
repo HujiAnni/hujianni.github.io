@@ -97,15 +97,14 @@ portfolioTitle.innerHTML = "My Portfolios";
 portfolioContainer.appendChild(portfolioTitle);
 
 let portfolioFlipCardContainer = document.createElement("div");
-portfolioFlipCardContainer.classList.add("row", "portfolio")
+portfolioFlipCardContainer.classList.add("row", "portfolio","row-cols-1", "row-cols-md-2", "g-4")
 
 for (let i = 0; i < portfolios.name.length; i++){
     let portfolioFlipCardGrid = document.createElement("div");
-    portfolioFlipCardGrid.classList.add("col-lg-6", "col-md-6", "col-sm-12");
+    portfolioFlipCardGrid.classList.add("col","col-lg-6", "col-md-6", "col-sm-12");
     portfolioFlipCardGrid.setAttribute("id",`${portfolios.id[i]}`)
-
     let portfolioFlipCard = document.createElement("div");
-    portfolioFlipCard.classList.add("card","flip-card");
+    portfolioFlipCard.classList.add("card", "flip-card");
 
     let portfolioFlipCardInner = document.createElement("div");
     portfolioFlipCardInner.classList.add("flip-card-inner");
@@ -118,8 +117,14 @@ for (let i = 0; i < portfolios.name.length; i++){
     portfolioImg.alt = `${portfolios.name[i]} imaage`;
     let portfolioFlipCardFrontTitle = document.createElement("h5");
     portfolioFlipCardFrontTitle.innerHTML = portfolios.name[i];
+    let portfolioFlipCardFrontLead = document.createElement("br");
+    portfolioFlipCardFrontLead.style.display="block";
+    portfolioFlipCardFrontLead.style.marginBottom="40px";
+    portfolioFlipCardFrontLead.style.lineHeight="40px";
+    // portfolioFlipCardFrontLead.setAttribute("id",`${portfolios.id[i]}`);
+
     portfolioFlipCardFrontTitle.classList.add("card-title");
-    portfolioFlipCardFront.append(portfolioImg,portfolioFlipCardFrontTitle)
+    portfolioFlipCardFront.append(portfolioFlipCardFrontLead, portfolioFlipCardFrontTitle, portfolioImg);
 
     let portfolioFlipCardBack = document.createElement("div");
     portfolioFlipCardBack.classList.add("card-body", "flip-card-back");

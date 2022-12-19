@@ -17,7 +17,7 @@
 const skills = {
     name: ["Data Science","Web Development","CRM & CDP", "Digital Marketing"],
     id: ["data-science","web-development","crm","digital-marketing"],
-    desc: ["Generate data-driven visual business insights and action plans by exploratory and predictive analysis with SQL, Python, and R, and data visualization using Tableau, PowerBI, and matplotlib/seaborn.",
+    desc: ["Generate data-driven business insights and action plans by exploratory and predictive analysis and data visualization.",
     "Build and design front-end and back-end of interactive and engaging web apps with personalized treatment.",
     "Manage multiple projects on omnichannel clienteling and multimedia customer journey building covering acquisition, retention, and reactivation.",
     "Execute creative content and digital strategy on multiple digital channels, paid and generic, to drive relevant traffic and conversion."],
@@ -32,14 +32,12 @@ const portfolios = {
     id: ["map","eye","deduction","horse-race"],
     desc: ["NYC Crime Map description",
     "EYE description",
-    `<p>A fun Factory Project, originated from PacMen Factory Project, and inspired by Sherlock Holmes's "The Science of Deduction". </p>
-    <p>This Project is an Evidence Factory, which mimic the three steps of detective work and Science of Deduction:</p>
+    `<p>This Project is an Evidence Factory, which mimic the three steps of detective work and Science of Deduction:</p>
     <ol>
     <li>Gather Evidence</li>
     <li>Observe and deducing</li>
     <li>Eliminate the impossible and conclusion</li>
     </ol>
-    <p><em>"I observe everything. From what I observe, I deduce everything. When I have eliminated the impossible, whatever remains, no matter how mad it might seem, must be the truth."</em> -- Sherlock Holmes</p>
     `,
     "Horse Race Simulation description"],
     img_src: ["https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
@@ -87,22 +85,28 @@ skillBootstrapGrid.classList.add("row", "row-cols-lg-4", "row-cols-md-2","row-co
 for (let i = 0; i < skills.name.length; i++) {
     let skill = document.createElement("div");
     skill.classList.add("skill-row","col");
+    let wrapper = document.createElement("div");
+    wrapper.classList.add("skill__wrap");
     let skillImg = document.createElement("img");
-    skillImg.classList.add("technical-img");
+    // skillImg.classList.add("img__wrap");
     skillImg.src = skills.img_src[i];
     skillImg.alt = skills.name[i];
     let skillDescSect = document.createElement("div");
-    skillDescSect.classList.add("technical-desc");
+    // skillDescSect.classList.add("technical-desc");
     skillDescSect.setAttribute("id",`${skills.id[i]}`);
     let skillDescSub = document.createElement("h3");
     skillDescSub.innerHTML = skills.name[i];
+    skillDescSub.classList.add("skill-title")
     let skillDesc = document.createElement("p");
-    skillDesc.classList.add("desc");
+    skillDesc.classList.add("skill__description");
     skillDesc.textContent = skills.desc[i];
+    
     skillDescSect.append(skillDescSub,skillDesc);
-    skill.append(skillImg,skillDescSect);
+    wrapper.append(skillImg,skillDescSect);
+    skill.appendChild(wrapper);
     skillBootstrapGrid.appendChild(skill);
 } 
+
 skillBootstrapGridContainer.appendChild(skillBootstrapGrid);
 skillDiv.append(skillTitle,skillBootstrapGridContainer);
 skillContainer.append(idBreak,skillDiv);
@@ -121,20 +125,25 @@ portfolioTitle.innerHTML = "My Portfolios";
 portfolioContainer.appendChild(portfolioTitle);
 
 let portfolioFlipCardContainer = document.createElement("div");
-portfolioFlipCardContainer.classList.add("row", "portfolio","row-cols-1", "row-cols-md-2", "g-4")
-
+portfolioFlipCardContainer.classList.add("row", "portfolio","mb-5");
+// ,"row-cols-1", "row-cols-md-2"
+portfolioFlipCardContainer.setAttribute("data-masonry",JSON.stringify({"percentPosition": true }));
 for (let i = 0; i < portfolios.name.length; i++){
     let portfolioFlipCardGrid = document.createElement("div");
-    portfolioFlipCardGrid.classList.add("col","col-lg-6", "col-md-6", "col-sm-12","grid-custom");
-    portfolioFlipCardGrid.setAttribute("id",`${portfolios.id[i]}`)
+    portfolioFlipCardGrid.classList.add("col","col-lg-4", "col-6", "mb-4", "col-sm-12");
+    
+    portfolioFlipCardGrid.setAttribute("id",`${portfolios.id[i]}`);
     let portfolioFlipCard = document.createElement("div");
-    portfolioFlipCard.classList.add("card", "flip-card");
+    // portfolioFlipCard.classList.add("card", "flip-card");
+    portfolioFlipCard.classList.add("card");
 
     let portfolioFlipCardInner = document.createElement("div");
-    portfolioFlipCardInner.classList.add("flip-card-inner");
+    portfolioFlipCardInner.classList.add("portfolio__wrap")
+    // portfolioFlipCardInner.classList.add("flip-card-inner");
 
     let portfolioFlipCardFront = document.createElement("div");
-    portfolioFlipCardFront.classList.add("card-body", "flip-card-front")
+    // portfolioFlipCardFront.classList.add("card-body", "flip-card-front")
+    portfolioFlipCardFront.classList.add("card-body")
     let portfolioImg = document.createElement("img");
     portfolioImg.src = portfolios.img_src[i];
     portfolioImg.classList.add("portfolio-img");
@@ -143,27 +152,32 @@ for (let i = 0; i < portfolios.name.length; i++){
     portfolioFlipCardFrontTitle.innerHTML = portfolios.name[i];
     
 
-    portfolioFlipCardFrontTitle.classList.add("card-title");
-    portfolioFlipCardFront.append(portfolioImg,portfolioFlipCardFrontTitle);
+    // portfolioFlipCardFrontTitle.classList.add("card-title");
+    portfolioFlipCardFront.append(portfolioImg);
 
     let portfolioFlipCardBack = document.createElement("div");
-    portfolioFlipCardBack.classList.add("card-body", "flip-card-back");
+    // portfolioFlipCardBack.classList.add("card-body", "flip-card-back");
+    portfolioFlipCardBack.classList.add("card-body","portfolio__description","align-self-center");
     let portfolioFlipCardBackTitle = document.createElement("h5");
     portfolioFlipCardBackTitle.innerHTML = portfolios.name[i];
     portfolioFlipCardBackTitle.classList.add("card-title")
     let portfolioFlipCardBackText = document.createElement("p");
     portfolioFlipCardBackText.innerHTML = portfolios.desc[i];
-    portfolioFlipCardBackText.classList.add("card-text");
+
+    portfolioFlipCardBackText.classList.add("card-text","align-self-center");
     let linkProject = document.createElement("a");
     linkProject.href = portfolios.project_link[i];
     linkProject.classList.add("card-link");
     linkProject.innerHTML = "View Project";
+    linkProject.target="_blank";
     let linkDemo = document.createElement("a");
     linkDemo.href = portfolios.demo_link[i];
     linkDemo.classList.add("card-link");
+    linkDemo.target="_blank";
     linkDemo.innerHTML = "Get Demo";
     portfolioFlipCardBack.append(portfolioFlipCardBackTitle,portfolioFlipCardBackText,linkProject,linkDemo);
 
+    // portfolioFlipCardInner.append(portfolioFlipCardFront,portfolioFlipCardBack);
     portfolioFlipCardInner.append(portfolioFlipCardFront,portfolioFlipCardBack);
 
     portfolioFlipCard.appendChild(portfolioFlipCardInner);

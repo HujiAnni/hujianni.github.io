@@ -42,6 +42,9 @@ hr {
   margin: 2.5rem auto;
 }
 
+ol {
+  text-align: left;
+}
 /* Nav Bar */
 .navbar-custom {
   background-color: #694E4E;
@@ -107,6 +110,10 @@ hr {
   to {top: 0;}
 } */
 
+.skill-title {
+  margin: 1
+}
+
 .profile-title {
   grid-area: title;
   text-align: left;
@@ -114,6 +121,10 @@ hr {
   position: relative;
   /* animation-name: profile-title-slide;
   animation-duration: 1s;   */
+}
+
+.card-text {
+  line-height: 125%;
 }
 /* 
 @keyframes profile-title-slide {
@@ -176,9 +187,7 @@ hr {
 
 /* Cards */
 
-.grid-custom {
-margin: 0 auto 25px;
-}
+
 
 .card {
   border: none;
@@ -186,8 +195,7 @@ margin: 0 auto 25px;
 }
 
 
-.flip-card {
-  /* position:relative; */
+/* .flip-card {
   width: 75%;
   height: 350px;
   perspective: 1000px; 
@@ -215,29 +223,75 @@ margin: 0 auto 25px;
 }
 
 .flip-card-front {
-  /* background-color: #694E4E; */
   color: #694E4E;
 }
 
 .flip-card-back {
   background-color: #F7E6B5;
-  /* width: 500px; */
-  /* height: 350px; */
-
   transform: rotateY(180deg);
-}
+} */
 
 
-/* Images  */
-.technical-img,
-.business-img {
+/* SKills  */
+.skill__wrap {
+  position: relative;
   width: 75%;
-  margin-bottom: 2.5rem;
+  height: 75%;
+  margin: auto auto 10% auto;
 }
 
+.skill__description {
+  position: absolute;
+  top: 0;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  background: #785E5C;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 2%;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.skill__wrap:hover .skill__description {
+  visibility: visible;
+  opacity: .75;
+}
+
+/* Portfolios */
 .portfolio-img {
   object-fit: cover;  
   height: 300px;
+}
+
+.portfolio__wrap {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  margin: auto auto 10% auto;
+}
+
+.portfolio__description {
+  position: absolute;
+  top: 0;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  background: #F7E6B5;
+  color: #000;
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 2%;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.portfolio__wrap:hover .portfolio__description {
+  visibility: visible;
+  opacity: .90;
 }
 
 .invite {

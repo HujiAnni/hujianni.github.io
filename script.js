@@ -44,15 +44,15 @@ const portfolios = {
     img_src: ["https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
     "https://pyxis.nymag.com/v1/imgs/91e/001/973cb64ce94251d70694bcc566c39fb172-24-frankenstein.2x.rsocial.w600.jpg",
     "images/portfolios/sherlock.jpg",
-    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg"],
+    "https://freesvg.org/img/race_horse.png"],
     project_link: ["", 
     "https://github.com/HujiAnni/eyes", 
     "https://github.com/HujiAnni/The-Science-Of-Deduction", 
-    ""],
+    "https://github.com/HujiAnni/Horse-Racing-Simulation"],
     demo_link: ["", 
     "https://hujianni.github.io/eyes", 
     "https://hujianni.github.io/The-Science-Of-Deduction/", 
-    ""]
+    " https://hujianni.github.io/Horse-Racing-Simulation/"]
 }
 
 const dropDown = document.querySelector(".dropdown-menu");

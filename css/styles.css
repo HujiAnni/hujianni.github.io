@@ -265,6 +265,7 @@ ol {
   object-fit: cover;  
   width: 400px;
   height: 300px;
+  margin-bottom: 5%;
 }
 
 .portfolio__wrap {

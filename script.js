@@ -28,10 +28,11 @@ const skills = {
 }
 
 const portfolios = {
-    name: ["NYC Crime Map","I Have My EYE On You","The Science Of Deduction", "Horse Race Simulation"],
+    name: ["NYC Crime Map","EYEs On You","The Science Of Deduction", "Horse Race Simulation"],
     id: ["map","eye","deduction","horse-race"],
     desc: ["NYC Crime Map description",
-    "EYE description",
+    `<p>Say hi to Frankenstein -- his eyes follow you when your mouse moves!</p>
+    <p>This Project is an reactive webpage build around Halloween. Whenever you move, the eyes of Frankenstein will follow your mouse movements.</p>`,
     `<p>This Project is an Evidence Factory, which mimic the three steps of detective work and Science of Deduction:</p>
     <ol>
     <li>Gather Evidence</li>
@@ -41,11 +42,17 @@ const portfolios = {
     `,
     "Horse Race Simulation description"],
     img_src: ["https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
-    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    "https://pyxis.nymag.com/v1/imgs/91e/001/973cb64ce94251d70694bcc566c39fb172-24-frankenstein.2x.rsocial.w600.jpg",
     "images/portfolios/sherlock.jpg",
     "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg"],
-    project_link: ["", "", "https://github.com/HujiAnni/The-Science-Of-Deduction/tree/main", ""],
-    demo_link: ["", "", "https://hujianni.github.io/The-Science-Of-Deduction/", ""]
+    project_link: ["", 
+    "https://github.com/HujiAnni/eyes", 
+    "https://github.com/HujiAnni/The-Science-Of-Deduction", 
+    ""],
+    demo_link: ["", 
+    "https://hujianni.github.io/eyes", 
+    "https://hujianni.github.io/The-Science-Of-Deduction/", 
+    ""]
 }
 
 const dropDown = document.querySelector(".dropdown-menu");
@@ -127,7 +134,7 @@ portfolioContainer.appendChild(portfolioTitle);
 let portfolioFlipCardContainer = document.createElement("div");
 portfolioFlipCardContainer.classList.add("row", "portfolio","mb-5");
 // ,"row-cols-1", "row-cols-md-2"
-portfolioFlipCardContainer.setAttribute("data-masonry",JSON.stringify({"percentPosition": true }));
+// portfolioFlipCardContainer.setAttribute("data-masonry",JSON.stringify({"percentPosition": true }));
 for (let i = 0; i < portfolios.name.length; i++){
     let portfolioFlipCardGrid = document.createElement("div");
     portfolioFlipCardGrid.classList.add("col","col-lg-4", "col-6", "mb-4", "col-sm-12");

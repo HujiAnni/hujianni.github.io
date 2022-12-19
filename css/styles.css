@@ -263,6 +263,7 @@ ol {
 /* Portfolios */
 .portfolio-img {
   object-fit: cover;  
+  width: 400px;
   height: 300px;
 }
 
@@ -270,7 +271,7 @@ ol {
   position: relative;
   width: 75%;
   height: 75%;
-  margin: auto auto 10% auto;
+  margin: auto;
 }
 
 .portfolio__description {
@@ -291,7 +292,7 @@ ol {
 
 .portfolio__wrap:hover .portfolio__description {
   visibility: visible;
-  opacity: .90;
+  opacity: .95;
 }
 
 .invite {

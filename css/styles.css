@@ -169,24 +169,27 @@ hr {
   color:#181818;
 }
 
+.card-text {
+ margin: auto;
+}
+
 
 /* Cards */
 
-/* .card-custom {
- width: 22.5%;
- margin: 15% 25%;
- /* border: none; 
-}*/
+.grid-custom {
+margin: 0 auto 25px;
+}
 
 .card {
   border: none;
 
 }
 
+
 .flip-card {
   /* position:relative; */
   width: 75%;
-  height: 450px;
+  height: 350px;
   perspective: 1000px; 
   margin: auto;
 }
@@ -219,29 +222,22 @@ hr {
 .flip-card-back {
   background-color: #F7E6B5;
   /* width: 500px; */
-  height: 450px;
+  /* height: 350px; */
 
   transform: rotateY(180deg);
 }
 
 
 /* Images  */
-/* .technical-img {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-}
-
-.business-img {
-  width: 25%;
-  float: right;
-  margin-left: 30px;
-} */
-
 .technical-img,
 .business-img {
   width: 75%;
   margin-bottom: 2.5rem;
+}
+
+.portfolio-img {
+  object-fit: cover;  
+  height: 300px;
 }
 
 .invite {

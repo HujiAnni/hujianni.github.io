@@ -1,3 +1,19 @@
+// //jshint esversion:6
+
+// // const express = require("express");
+// const bodyParser = require("body-parser");
+// const ejs = require("ejs");
+// // const _ = require("lodash");
+
+// const app = express();
+
+// app.set('view engine', 'ejs');
+
+// app.use(bodyParser.urlencoded({extended: true}));
+// app.use(express.static("public"));
+
+
+
 const skills = {
     name: ["Data Science","Web Development","CRM & CDP", "Digital Marketing"],
     id: ["data-science","web-development","crm","digital-marketing"],
@@ -12,18 +28,26 @@ const skills = {
 }
 
 const portfolios = {
-    name: ["NYC Crime Map","I Have My EYE On You","PacMan Factory", "Horse Race Simulation"],
-    id: ["map","eye","facotry","horse-race"],
+    name: ["NYC Crime Map","I Have My EYE On You","The Science Of Deduction", "Horse Race Simulation"],
+    id: ["map","eye","deduction","horse-race"],
     desc: ["NYC Crime Map description",
     "EYE description",
-    "Factory description",
+    `<p>A fun Factory Project, originated from PacMen Factory Project, and inspired by Sherlock Holmes's "The Science of Deduction". </p>
+    <p>This Project is an Evidence Factory, which mimic the three steps of detective work and Science of Deduction:</p>
+    <ol>
+    <li>Gather Evidence</li>
+    <li>Observe and deducing</li>
+    <li>Eliminate the impossible and conclusion</li>
+    </ol>
+    <p><em>"I observe everything. From what I observe, I deduce everything. When I have eliminated the impossible, whatever remains, no matter how mad it might seem, must be the truth."</em> -- Sherlock Holmes</p>
+    `,
     "Horse Race Simulation description"],
     img_src: ["https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
     "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
-    "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    "images/portfolios/sherlock.jpg",
     "https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg"],
-    project_link: ["", "", "", ""],
-    demo_link: ["", "", "", ""]
+    project_link: ["", "", "https://github.com/HujiAnni/The-Science-Of-Deduction/tree/main", ""],
+    demo_link: ["", "", "https://hujianni.github.io/The-Science-Of-Deduction/", ""]
 }
 
 const dropDown = document.querySelector(".dropdown-menu");
@@ -101,7 +125,7 @@ portfolioFlipCardContainer.classList.add("row", "portfolio","row-cols-1", "row-c
 
 for (let i = 0; i < portfolios.name.length; i++){
     let portfolioFlipCardGrid = document.createElement("div");
-    portfolioFlipCardGrid.classList.add("col","col-lg-6", "col-md-6", "col-sm-12");
+    portfolioFlipCardGrid.classList.add("col","col-lg-6", "col-md-6", "col-sm-12","grid-custom");
     portfolioFlipCardGrid.setAttribute("id",`${portfolios.id[i]}`)
     let portfolioFlipCard = document.createElement("div");
     portfolioFlipCard.classList.add("card", "flip-card");
@@ -113,18 +137,14 @@ for (let i = 0; i < portfolios.name.length; i++){
     portfolioFlipCardFront.classList.add("card-body", "flip-card-front")
     let portfolioImg = document.createElement("img");
     portfolioImg.src = portfolios.img_src[i];
-    portfolioImg.classList.add("card-img-top");
-    portfolioImg.alt = `${portfolios.name[i]} imaage`;
+    portfolioImg.classList.add("portfolio-img");
+    portfolioImg.alt = `${portfolios.name[i]} image`;
     let portfolioFlipCardFrontTitle = document.createElement("h5");
     portfolioFlipCardFrontTitle.innerHTML = portfolios.name[i];
-    let portfolioFlipCardFrontLead = document.createElement("br");
-    portfolioFlipCardFrontLead.style.display="block";
-    portfolioFlipCardFrontLead.style.marginBottom="40px";
-    portfolioFlipCardFrontLead.style.lineHeight="40px";
-    // portfolioFlipCardFrontLead.setAttribute("id",`${portfolios.id[i]}`);
+    
 
     portfolioFlipCardFrontTitle.classList.add("card-title");
-    portfolioFlipCardFront.append(portfolioFlipCardFrontLead, portfolioFlipCardFrontTitle, portfolioImg);
+    portfolioFlipCardFront.append(portfolioImg,portfolioFlipCardFrontTitle);
 
     let portfolioFlipCardBack = document.createElement("div");
     portfolioFlipCardBack.classList.add("card-body", "flip-card-back");

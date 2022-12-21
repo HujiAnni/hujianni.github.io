@@ -67,7 +67,7 @@ const dropDown = document.querySelector(".dropdown-menu");
 
 // Dynamic Nav Bar - Portfolios
 let dropdownItem0 = document.createElement("a");
-dropdownItem0.classList.add("dropdown-item", "dropdown-item-custom");
+dropdownItem0.classList.add("dropdown-item","dropdown-item-custom", "dropdown-item0-custom");
 dropdownItem0.href = `#portfolios`;
 dropdownItem0.innerHTML = "Show All";
 

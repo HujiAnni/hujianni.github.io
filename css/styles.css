@@ -69,6 +69,11 @@ ol {
   font-weight: bold;
 }
 
+.dropdown-item0-custom {
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 0.5px #785E5C;
+}
+
 .dropdown-item-custom {
   color: #F1EFDC;
 }
@@ -76,6 +81,7 @@ ol {
 .dropdown-item-custom:hover {
   background-color: #F7E6B5;
   color:#694E4E;
+  font-weight: bold;
 }
 
 .card-link-custom {

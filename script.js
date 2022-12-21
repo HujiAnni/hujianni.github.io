@@ -30,7 +30,8 @@ const skills = {
 const portfolios = {
     name: ["NYC Crime Map","EYEs On You","The Science Of Deduction", "Horse Race Simulation"],
     id: ["map","eye","deduction","horse-race"],
-    desc: ["NYC Crime Map description",
+    desc: [`<p>This Project is a map featuring all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of 2019. </p>
+    <p>The map is built and customized with Mapbox API. The data is shown in two forms: Heat Map and by Cluster.</p> `,
     `<p>Say hi to Frankenstein -- his eyes follow you when your mouse moves!</p>
     <p>This Project is an reactive webpage build around Halloween. Whenever you move, the eyes of Frankenstein will follow your mouse movements.</p>`,
     `<p>This Project is an Evidence Factory, which mimic the three steps of detective work and Science of Deduction:</p>
@@ -41,11 +42,11 @@ const portfolios = {
     </ol>
     `,
     "Horse Race Simulation description"],
-    img_src: ["https://planetwings.com/wp-content/uploads/2016/05/sample-img.jpg",
+    img_src: ["images/portfolios/crime-map.jpg",
     "https://pyxis.nymag.com/v1/imgs/91e/001/973cb64ce94251d70694bcc566c39fb172-24-frankenstein.2x.rsocial.w600.jpg",
     "images/portfolios/sherlock.jpg",
-    "https://freesvg.org/img/race_horse.png"],
-    project_link: ["", 
+    "https://media.istockphoto.com/id/511801274/vector/jockey-on-horse.jpg?s=612x612&w=0&k=20&c=8okiQUOClXm1kRFr16IFsxzm7VPZM8QYwoFH0_e9C9Y="],
+    project_link: ["https://github.com/HujiAnni/Crime-Map", 
     "https://github.com/HujiAnni/eyes", 
     "https://github.com/HujiAnni/The-Science-Of-Deduction", 
     "https://github.com/HujiAnni/Horse-Racing-Simulation"],

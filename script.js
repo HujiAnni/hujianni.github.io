@@ -28,10 +28,13 @@ const skills = {
 }
 
 const portfolios = {
-    name: ["NYC Crime Map","EYEs On You","Science Of Deduction", "Horse Race Simulation"],
-    id: ["map","eye","deduction","horse-race"],
+    name: ["NYC Crime Map","Real Time Bus Tracker", "EYEs On You","Science Of Deduction", "Horse Race Simulation"],
+    id: ["map","bus", "eye","deduction","horse-race"],
     desc: [`<p>This Project is a map featuring all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of 2019. </p>
     <p>The map is built and customized with Mapbox API. The data is shown in two forms: Heat Map and by Cluster.</p> `,
+    `This Project is a map showing bus stops between MIT and Harvard. 
+    The map is built and customized using Mapbox API. 
+    When click on the button on the top right, an animation will show with an marker the route of the bus from MIT to Harvard. `,
     `<p>Say hi to Frankenstein -- his eyes follow you when your mouse moves!</p>
     <p>This Project is an reactive webpage build around Halloween. Whenever you move, the eyes of Frankenstein will follow your mouse movements.</p>`,
     `<p>This Project is an Evidence Factory, which mimic the three steps of detective work and Science of Deduction:</p>
@@ -43,14 +46,17 @@ const portfolios = {
     `,
     "Horse Race Simulation description"],
     img_src: ["images/portfolios/crime-map.jpg",
+    "images/portfolios/BusTracker.jpg",
     "https://pyxis.nymag.com/v1/imgs/91e/001/973cb64ce94251d70694bcc566c39fb172-24-frankenstein.2x.rsocial.w600.jpg",
     "images/portfolios/sherlock.jpg",
     "https://media.istockphoto.com/id/511801274/vector/jockey-on-horse.jpg?s=612x612&w=0&k=20&c=8okiQUOClXm1kRFr16IFsxzm7VPZM8QYwoFH0_e9C9Y="],
     project_link: ["https://github.com/HujiAnni/Crime-Map", 
+    "https://github.com/HujiAnni/Real-Time-Bus-Tracker",
     "https://github.com/HujiAnni/eyes", 
     "https://github.com/HujiAnni/The-Science-Of-Deduction", 
     "https://github.com/HujiAnni/Horse-Racing-Simulation"],
     demo_link: ["https://hujianni.github.io/Crime-Map", 
+    "https://hujianni.github.io/Real-Time-Bus-Tracker",
     "https://hujianni.github.io/eyes", 
     "https://hujianni.github.io/The-Science-Of-Deduction", 
     " https://hujianni.github.io/Horse-Racing-Simulation"]
@@ -60,13 +66,18 @@ const dropDown = document.querySelector(".dropdown-menu");
 
 
 // Dynamic Nav Bar - Portfolios
+let dropdownItem0 = document.createElement("a");
+dropdownItem0.classList.add("dropdown-item", "dropdown-item-custom");
+dropdownItem0.href = `#portfolios`;
+dropdownItem0.innerHTML = "Show All";
 
+dropDown.appendChild(dropdownItem0);
 for (let i = 0; i < portfolios.name.length; i++){
     let dropDownItem = document.createElement("li");
     let dropDownItemLink = document.createElement("a");
     dropDownItemLink.classList.add("dropdown-item", "dropdown-item-custom");
-    // dropDownItemLink.href = `#${portfolios.demo_link[i]}`;
-    dropDownItemLink.href = `#portfolios`
+    dropDownItemLink.href = `${portfolios.demo_link[i]}`; 
+    dropDownItemLink.target="_blank";
     dropDownItemLink.innerHTML = portfolios.name[i];
     dropDownItem.appendChild(dropDownItemLink);
     dropDown.appendChild(dropDownItem);

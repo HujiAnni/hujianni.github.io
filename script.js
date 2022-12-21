@@ -28,7 +28,7 @@ const skills = {
 }
 
 const portfolios = {
-    name: ["NYC Crime Map","EYEs On You","The Science Of Deduction", "Horse Race Simulation"],
+    name: ["NYC Crime Map","EYEs On You","Science Of Deduction", "Horse Race Simulation"],
     id: ["map","eye","deduction","horse-race"],
     desc: [`<p>This Project is a map featuring all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of 2019. </p>
     <p>The map is built and customized with Mapbox API. The data is shown in two forms: Heat Map and by Cluster.</p> `,
@@ -65,7 +65,8 @@ for (let i = 0; i < portfolios.name.length; i++){
     let dropDownItem = document.createElement("li");
     let dropDownItemLink = document.createElement("a");
     dropDownItemLink.classList.add("dropdown-item", "dropdown-item-custom");
-    dropDownItemLink.href = `#${portfolios.id[i]}`;
+    // dropDownItemLink.href = `#${portfolios.demo_link[i]}`;
+    dropDownItemLink.href = `#portfolios`
     dropDownItemLink.innerHTML = portfolios.name[i];
     dropDownItem.appendChild(dropDownItemLink);
     dropDown.appendChild(dropDownItem);

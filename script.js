@@ -50,10 +50,10 @@ const portfolios = {
     "https://github.com/HujiAnni/eyes", 
     "https://github.com/HujiAnni/The-Science-Of-Deduction", 
     "https://github.com/HujiAnni/Horse-Racing-Simulation"],
-    demo_link: ["https://hujianni.github.io/Crime-Map/", 
+    demo_link: ["https://hujianni.github.io/Crime-Map", 
     "https://hujianni.github.io/eyes", 
-    "https://hujianni.github.io/The-Science-Of-Deduction/", 
-    " https://hujianni.github.io/Horse-Racing-Simulation/"]
+    "https://hujianni.github.io/The-Science-Of-Deduction", 
+    " https://hujianni.github.io/Horse-Racing-Simulation"]
 }
 
 const dropDown = document.querySelector(".dropdown-menu");
@@ -172,16 +172,17 @@ for (let i = 0; i < portfolios.name.length; i++){
     portfolioFlipCardBackTitle.classList.add("card-title")
     let portfolioFlipCardBackText = document.createElement("p");
     portfolioFlipCardBackText.innerHTML = portfolios.desc[i];
+    portfolioFlipCardBackText.classList.add("portfolio-desc");
 
     portfolioFlipCardBackText.classList.add("card-text","align-self-center");
     let linkProject = document.createElement("a");
     linkProject.href = portfolios.project_link[i];
-    linkProject.classList.add("card-link");
+    linkProject.classList.add("card-link","card-link-custom");
     linkProject.innerHTML = "View Project";
     linkProject.target="_blank";
     let linkDemo = document.createElement("a");
     linkDemo.href = portfolios.demo_link[i];
-    linkDemo.classList.add("card-link");
+    linkDemo.classList.add("card-link","card-link-custom");
     linkDemo.target="_blank";
     linkDemo.innerHTML = "Get Demo";
     portfolioFlipCardBack.append(portfolioFlipCardBackTitle,portfolioFlipCardBackText,linkProject,linkDemo);

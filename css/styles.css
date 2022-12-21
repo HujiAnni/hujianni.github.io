@@ -66,6 +66,7 @@ ol {
 
 .dropdown-custom {
   background-color: #694E4E;
+  font-weight: bold;
 }
 
 .dropdown-item-custom {
@@ -77,6 +78,9 @@ ol {
   color:#694E4E;
 }
 
+.card-link-custom {
+  font-weight: bold;
+}
 
 /* Grids */
 
@@ -266,6 +270,11 @@ ol {
   width: 400px;
   height: 300px;
   margin-bottom: 5%;
+  border-radius: 2%;
+}
+
+.portfolio-desc {
+  text-shadow: 0.5px 0.5px 0.5px #785E5C;
 }
 
 .portfolio__wrap {

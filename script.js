@@ -50,7 +50,7 @@ const portfolios = {
     "https://github.com/HujiAnni/eyes", 
     "https://github.com/HujiAnni/The-Science-Of-Deduction", 
     "https://github.com/HujiAnni/Horse-Racing-Simulation"],
-    demo_link: ["", 
+    demo_link: ["https://hujianni.github.io/Crime-Map/", 
     "https://hujianni.github.io/eyes", 
     "https://hujianni.github.io/The-Science-Of-Deduction/", 
     " https://hujianni.github.io/Horse-Racing-Simulation/"]

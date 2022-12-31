@@ -44,7 +44,8 @@ const portfolios = {
     <li>Eliminate the impossible and conclusion</li>
     </ol>
     `,
-    "Horse Race Simulation description"],
+    `<p>Before starting the game, pick a horse you bet will win and press any key to start the race. Once you press the key, the race will start in 3 seconds countdown. Afterward, the race will start and the horses will move at random speeds. Will the horse you bet on win the race? The result will be shown after the match finished and you'll know!</p>
+    <p>The game will restart and you can replay after a few seconds.</p>`],
     img_src: ["images/portfolios/crime-map.jpg",
     "images/portfolios/BusTracker.jpg",
     "https://pyxis.nymag.com/v1/imgs/91e/001/973cb64ce94251d70694bcc566c39fb172-24-frankenstein.2x.rsocial.w600.jpg",

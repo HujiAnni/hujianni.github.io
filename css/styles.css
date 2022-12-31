@@ -296,10 +296,12 @@ ol {
   bottom: 5%;
   left: 0;
   right: 0;
+  width: 430px;
   background: #F7E6B5;
   color: #000;
   visibility: hidden;
   opacity: 0;
+  margin: auto;
   border-radius: 2%;
 
   /* transition effect. not necessary */
@@ -366,7 +368,7 @@ ol {
 }
 
 .bottom-container {
-  background-color: #FFAE6D;
+  background-color: #FFBC80;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
 }
@@ -377,9 +379,12 @@ ol {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
+.footer-link:hover {
+  color: #FFFBE9;
+}
 
 .copyright {
-  color: #F1EFDC;
+  color: #FFFBE9;
   margin-top:1.25rem;
 
 }

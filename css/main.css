@@ -1,0 +1,18 @@
+.landing {
+    margin: 10% auto 10% auto;
+}
+
+.desc {
+    border: none;
+    background-color: #BF9270;
+    color: #FFFBE9;
+    }
+
+.links {
+    border: none;
+    background-color: #FFEDDB;
+}
+
+body {
+    background-color: #FFF8E1;
+}

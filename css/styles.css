@@ -266,6 +266,7 @@ background-color: #FFF8E1;
   visibility: hidden;
   opacity: 0;
   border-radius: 2%;
+  vertical-align: middle;
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
@@ -308,7 +309,6 @@ background-color: #FFF8E1;
   opacity: 0;
   margin: auto;
   border-radius: 2%;
-
   /* transition effect. not necessary */
   transition: opacity .2s, visibility .2s;
 }
@@ -316,6 +316,7 @@ background-color: #FFF8E1;
 .portfolio__wrap:hover .portfolio__description {
   visibility: visible;
   opacity: .95;
+
 }
 
 .invite {

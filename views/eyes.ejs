@@ -1,0 +1,18 @@
+<%- include("partials/header"); -%>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">
+            <%=projectName%>
+          </h1>
+          <p class="col-md-8 fs-4">  
+            <%=projectDesc%>
+          </p>
+        </div>
+    </div>
+            
+        <a href=<%=projectGit%>><button class="btn btn-outline-secondary" type="button" >Git Repo</button></a>
+        <a href=<%=projectDemo%>><button class="btn btn-outline-secondary" type="button" >Demo</button></a>
+
+
+<%- include("partials/footer"); -%>

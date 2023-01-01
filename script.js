@@ -1,9 +1,9 @@
-// //jshint esversion:6
+//jshint esversion:6
 
-// // const express = require("express");
+// const express = require("express");
 // const bodyParser = require("body-parser");
-// const ejs = require("ejs");
-// // const _ = require("lodash");
+// // const ejs = require("ejs");
+// // // const _ = require("lodash");
 
 // const app = express();
 
@@ -12,6 +12,13 @@
 // app.use(bodyParser.urlencoded({extended: true}));
 // app.use(express.static("public"));
 
+// app.get("/portfolio/eyes",function(req, res){
+//     res.render("eyes", {projectName: portfolios.name[2],
+//     projectDesc: portfolios.desc[2],
+//     projectImg: portfolios.img_src[2],
+//     projectGit: portfolios.project_link[2],
+//     projectDemo: portfolios.demo_link[2]})
+// });
 
 
 const skills = {
@@ -61,7 +68,12 @@ const portfolios = {
     "https://hujianni.github.io/Real-Time-Bus-Tracker",
     "https://hujianni.github.io/eyes", 
     "https://hujianni.github.io/The-Science-Of-Deduction", 
-    " https://hujianni.github.io/Horse-Racing-Simulation"]
+    "https://hujianni.github.io/Horse-Racing-Simulation"],
+    landing_page: ["/portfolios/crime.html", 
+    "/portfolios/bus.html",
+    "/portfolios/eyes.html", 
+    "/portfolios/deduction.html", 
+    "/portfolios/horse-race.html"]
 }
 
 const dropDown = document.querySelector(".dropdown-menu");
@@ -70,7 +82,7 @@ const dropDown = document.querySelector(".dropdown-menu");
 // Dynamic Nav Bar - Portfolios
 let dropdownItem0 = document.createElement("a");
 dropdownItem0.classList.add("dropdown-item","dropdown-item-custom", "dropdown-item0-custom");
-dropdownItem0.href = `#portfolios`;
+dropdownItem0.href = `../index.html#portfolios`;
 dropdownItem0.innerHTML = "Show All";
 
 dropDown.appendChild(dropdownItem0);
@@ -78,14 +90,12 @@ for (let i = 0; i < portfolios.name.length; i++){
     let dropDownItem = document.createElement("li");
     let dropDownItemLink = document.createElement("a");
     dropDownItemLink.classList.add("dropdown-item", "dropdown-item-custom");
-    dropDownItemLink.href = `${portfolios.demo_link[i]}`; 
-    dropDownItemLink.target="_blank";
+    dropDownItemLink.href = `${portfolios.landing_page[i]}`; 
+    // dropDownItemLink.target="_blank";
     dropDownItemLink.innerHTML = portfolios.name[i];
     dropDownItem.appendChild(dropDownItemLink);
     dropDown.appendChild(dropDownItem);
 }
-
-
 
 
 
@@ -195,16 +205,21 @@ for (let i = 0; i < portfolios.name.length; i++){
 
     portfolioFlipCardBackText.classList.add("card-text","align-self-center");
     let linkProject = document.createElement("a");
-    linkProject.href = portfolios.project_link[i];
+    linkProject.href = portfolios.landing_page[i];
     linkProject.classList.add("card-link","card-link-custom");
     linkProject.innerHTML = "View Project";
     linkProject.target="_blank";
+    let gitRepo = document.createElement("a");
+    gitRepo.href = portfolios.project_link[i];
+    gitRepo.classList.add("card-link","card-link-custom");
+    gitRepo.innerHTML = "Git Repo";
+    gitRepo.target="_blank";
     let linkDemo = document.createElement("a");
     linkDemo.href = portfolios.demo_link[i];
     linkDemo.classList.add("card-link","card-link-custom");
     linkDemo.target="_blank";
     linkDemo.innerHTML = "Get Demo";
-    portfolioFlipCardBack.append(portfolioFlipCardBackTitle,portfolioFlipCardBackText,linkProject,linkDemo);
+    portfolioFlipCardBack.append(portfolioFlipCardBackTitle,portfolioFlipCardBackText,linkProject,gitRepo,linkDemo);
 
     // portfolioFlipCardInner.append(portfolioFlipCardFront,portfolioFlipCardBack);
     portfolioFlipCardInner.append(portfolioFlipCardFront,portfolioFlipCardBack);

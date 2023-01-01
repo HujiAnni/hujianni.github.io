@@ -32,9 +32,9 @@ const portfolios = {
     id: ["map","bus", "eye","deduction","horse-race"],
     desc: [`<p>This Project is a map featuring all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of 2019. </p>
     <p>The map is built and customized with Mapbox API. The data is shown in two forms: Heat Map and by Cluster.</p> `,
-    `This Project is a map showing bus stops between MIT and Harvard. 
-    The map is built and customized using Mapbox API. 
-    When click on the button on the top right, an animation will show with an marker the route of the bus from MIT to Harvard. `,
+    `<p>This Project is a map showing bus stops between MIT and Harvard. </p>
+    <p>The map is built and customized using Mapbox API. </p>
+    <p>When click on the button on the top right, an animation will show with an marker the route of the bus from MIT to Harvard. </p>`,
     `<p>Say hi to Frankenstein -- his eyes follow you when your mouse moves!</p>
     <p>This Project is an reactive webpage build around Halloween. Whenever you move, the eyes of Frankenstein will follow your mouse movements.</p>`,
     `<p>This Project is an Evidence Factory, which mimic the three steps of detective work and Science of Deduction:</p>
@@ -84,6 +84,12 @@ for (let i = 0; i < portfolios.name.length; i++){
     dropDownItem.appendChild(dropDownItemLink);
     dropDown.appendChild(dropDownItem);
 }
+
+
+
+
+
+
 
 
 // Add skills to html by DOM
@@ -147,7 +153,7 @@ portfolioTitle.innerHTML = "My Portfolios";
 portfolioContainer.appendChild(portfolioTitle);
 
 let portfolioFlipCardContainer = document.createElement("div");
-portfolioFlipCardContainer.classList.add("row", "portfolio","mb-5");
+portfolioFlipCardContainer.classList.add("row", "portfolio","mb-5", "row-cols-md-2");
 // ,"row-cols-1", "row-cols-md-2"
 // portfolioFlipCardContainer.setAttribute("data-masonry",JSON.stringify({"percentPosition": true }));
 for (let i = 0; i < portfolios.name.length; i++){
@@ -157,7 +163,7 @@ for (let i = 0; i < portfolios.name.length; i++){
     portfolioFlipCardGrid.setAttribute("id",`${portfolios.id[i]}`);
     let portfolioFlipCard = document.createElement("div");
     // portfolioFlipCard.classList.add("card", "flip-card");
-    portfolioFlipCard.classList.add("card");
+    portfolioFlipCard.classList.add("card","card-custom");
 
     let portfolioFlipCardInner = document.createElement("div");
     portfolioFlipCardInner.classList.add("portfolio__wrap")

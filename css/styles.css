@@ -243,6 +243,11 @@ ol {
 
 
 /* SKills  */
+.card-custom {
+background-color: #FFF8E1;
+
+}
+
 .skill__wrap {
   position: relative;
   width: 75%;
@@ -273,8 +278,8 @@ ol {
 /* Portfolios */
 .portfolio-img {
   object-fit: cover;  
-  width: 400px;
-  height: 300px;
+  width: 26vw;
+  height: 20vw;
   margin-bottom: 5%;
   border-radius: 2%;
 }
@@ -285,8 +290,8 @@ ol {
 
 .portfolio__wrap {
   position: relative;
-  width: 75%;
-  height: 75%;
+  /* width: 75%;
+  height: 75%; */
   margin: auto;
 }
 
@@ -296,7 +301,7 @@ ol {
   bottom: 5%;
   left: 0;
   right: 0;
-  width: 430px;
+  /* width: 430px; */
   background: #F7E6B5;
   color: #000;
   visibility: hidden;
@@ -360,6 +365,9 @@ ol {
 .middle-container {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
+  background-color: #FFF8E1;
+  background: linear-gradient(0deg,#FFBC80, #FFF8E1,#FFF8E1 );
+  background-size: 100% 150%;
 }
 
 .portfolio-container {
@@ -390,8 +398,8 @@ ol {
 }
 
 
-/* Media Responsive */
-@media screen and (max-width: 768px) {
+/* Media Responsive - small screen*/
+@media screen and (max-width: 960px) {
   .top-container {
     padding-top: 6rem;
     padding-bottom: 1.875rem;
@@ -439,6 +447,49 @@ ol {
     font-size: 18px;
   }
 
+
+  .middle-container {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    background-color: #FFF8E1;
+    background: linear-gradient(0deg,#FFBC80, #FFF8E1,#FFF8E1 );
+    background-size: 100% 200%;
+  }
+
+  .portfolio-img {
+    width: 80vw;
+    height: 60vw;
+  }
+
+  .portfolio-desc {
+    font-size: larger;
+  }
+
+  h5.card-title {
+    font-size: larger;
+  }
+
+  .card-link {
+    font-size: larger;
+  }
 }
 
+/* Media Responsive - medium screen*/
+@media screen and (max-width: 1200px) {
+  .portfolio-img {
+    width: 28vw;
+    height: 21vw;
+  }
 
+  .portfolio-desc {
+    font-size: smaller;
+  }
+
+  .portfolio-desc {
+    font-size: smaller;
+  }
+
+  .card-link {
+    font-size: smaller;
+  }
+}

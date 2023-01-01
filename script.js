@@ -125,11 +125,11 @@ for (let i = 0; i < skills.name.length; i++) {
     let skillDescSub = document.createElement("h3");
     skillDescSub.innerHTML = skills.name[i];
     skillDescSub.classList.add("skill-title")
-    let skillDesc = document.createElement("p");
-    skillDesc.classList.add("skill__description");
-    skillDesc.textContent = skills.desc[i];
+    // let skillDesc = document.createElement("p");
+    // skillDesc.classList.add("skill__description");
+    // skillDesc.textContent = skills.desc[i];
     
-    skillDescSect.append(skillDescSub,skillDesc);
+    skillDescSect.append(skillDescSub);
     wrapper.append(skillImg,skillDescSect);
     skill.appendChild(wrapper);
     skillBootstrapGrid.appendChild(skill);
@@ -158,7 +158,7 @@ portfolioFlipCardContainer.classList.add("row", "portfolio","mb-5", "row-cols-md
 // portfolioFlipCardContainer.setAttribute("data-masonry",JSON.stringify({"percentPosition": true }));
 for (let i = 0; i < portfolios.name.length; i++){
     let portfolioFlipCardGrid = document.createElement("div");
-    portfolioFlipCardGrid.classList.add("col","col-lg-4", "col-6", "mb-4", "col-sm-12");
+    portfolioFlipCardGrid.classList.add("col","col-lg-4", "col-6", "mb-4", "col-sm-12","m-auto");
     
     portfolioFlipCardGrid.setAttribute("id",`${portfolios.id[i]}`);
     let portfolioFlipCard = document.createElement("div");

@@ -366,10 +366,15 @@ background-color: #FFF8E1;
 .middle-container {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
+  background-image: url("/images/watercolor.png");
+  background-repeat: repeat;
   background-color: #FFF8E1;
   background: linear-gradient(0deg,#FFBC80, #FFF8E1,#FFF8E1 );
   background-size: 100% 150%;
+  /* -webkit-mask-image: url("/images/watercolor.png");
+  mask-image: url("/images/watercolor.png"); */
 }
+
 
 .portfolio-container {
   padding-top: 3.125rem;

@@ -33,6 +33,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color:#D36B00;
+}
+
+
 hr {
   border-style: none;
   border-style: dotted none none;
@@ -100,10 +105,10 @@ ol {
   'img title'
   'img txt'
   'img txt';
-
 }
 
-.profile-img {
+.profile-img,
+iframe {
   width: 50%;
   min-width: 24rem;
   filter: brightness(108%) saturate(90%);
@@ -114,6 +119,7 @@ ol {
   animation-duration: 1s;  
   animation-fill-mode: forwards; */
 }
+
 
 /* @keyframes profile-img-slide {
   from {top: -25%;}
@@ -155,7 +161,9 @@ ol {
   to {opacity: 1;}
 } */
 
-
+.icon {
+  grid-area: icons;
+}
 
 /* Texts */
 .intro-sent {
@@ -164,6 +172,10 @@ ol {
   line-height: 2;
   text-align: left;
   font-size: 1.125rem;
+}
+
+.icons {
+  font-size: 2rem;
 }
 
 .sub-title {
@@ -196,8 +208,6 @@ ol {
 
 
 /* Cards */
-
-
 
 .card {
   border: none;

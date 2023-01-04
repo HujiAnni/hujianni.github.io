@@ -208,7 +208,7 @@ for (let i = 0; i < portfolios.name.length; i++){
     linkProject.href = portfolios.landing_page[i];
     linkProject.classList.add("card-link","card-link-custom");
     linkProject.innerHTML = "View Project";
-    linkProject.target="_blank";
+    // linkProject.target="_blank";
     let gitRepo = document.createElement("a");
     gitRepo.href = portfolios.project_link[i];
     gitRepo.classList.add("card-link","card-link-custom");

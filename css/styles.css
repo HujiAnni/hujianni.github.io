@@ -28,6 +28,10 @@ h3 {
   color: #874C62;
 }
 
+p {
+  font-size: 1.125rem;
+}
+
 a {
   color: #874C62;
   text-decoration: none;
@@ -166,6 +170,9 @@ iframe {
   justify-content:end;
 }
 
+.git-user {
+  font-size: x-small;
+}
 /* Texts */
 .intro-sent {
   width: 75%;
@@ -484,7 +491,7 @@ background-color: #FFF8E1;
    .intro-sent {
     text-align: center;   
     margin: auto;
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
 
@@ -517,4 +524,6 @@ background-color: #FFF8E1;
 /* Media Responsive - mobile screen*/
 @media screen and (min-width:320px) and (max-width:640px) {
   /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+
+  
 }

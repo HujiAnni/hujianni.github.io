@@ -106,13 +106,11 @@ profileImg.addEventListener('mouseover', () => {
     video.style.display = "block";
     profileImg.style.display = "none";
 });
-video.addEventListener('mouseout', () => {
-    video.style.display = "none";
-    profileImg.style.display = "block";
+
+let videoHide = video.addEventListener('mouseout', () => {
+        video.style.display = "none";
+        profileImg.style.display = "block";
 });
-
-
-
 // Add skills to html by DOM
 let middleContainer = document.querySelector(".middle-container");
 
@@ -268,5 +266,3 @@ contactBtn.innerHTML = "CONTACT ME";
 contactContainer.append(contactTitle, contactConversation, contactText, contactBtn)
 
 middleContainer.append(contactId, contactContainer)
-
-

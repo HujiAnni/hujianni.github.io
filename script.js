@@ -107,10 +107,27 @@ profileImg.addEventListener('mouseover', () => {
     profileImg.style.display = "none";
 });
 
-let videoHide = video.addEventListener('mouseout', () => {
+// let videoEnded = false;
+// const iframe = document.querySelector('iframe');
+// const player = new Vimeo.Player(iframe);
+
+//    let myPromise = new Promise(()=>{
+//     player.on('ended', function(){
+//         videoEnded = true;
+//     });
+//    })
+
+
+// myPromise.then(()=>{
+//     video.addEventListener('mouseout', () => {
+//     video.style.display = "none";
+//     profileImg.style.display = "block";})
+// });
+
+video.addEventListener('mouseout', () => {
         video.style.display = "none";
-        profileImg.style.display = "block";
-});
+        profileImg.style.display = "block";})
+
 // Add skills to html by DOM
 let middleContainer = document.querySelector(".middle-container");
 

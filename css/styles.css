@@ -119,6 +119,8 @@ iframe {
   grid-area: img;
   margin: 5% auto;
   position: relative;
+  transition: 1s;
+
   /* animation-name: profile-img-slide;
   animation-duration: 1s;  
   animation-fill-mode: forwards; */
@@ -164,6 +166,10 @@ iframe {
   from {opacity: 0;}
   to {opacity: 1;}
 } */
+
+.profile-video {
+  transition: opacity 1s ease;
+}
 
 .social {
   margin: auto;

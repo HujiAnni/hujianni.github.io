@@ -100,11 +100,15 @@ for (let i = 0; i < portfolios.name.length; i++){
 
 // Profile image & video
 let profileImg = document.querySelector(".profile-img");
-let video = document.querySelector(".profile-video");
+let video = document.querySelector("iframe");
+
 
 profileImg.addEventListener('mouseover', () => {
     video.style.display = "block";
+    // video.style.opacity = "1";
     profileImg.style.display = "none";
+    // profileImg.style.opacity = "0";
+
 });
 
 // let videoEnded = false;
@@ -124,9 +128,13 @@ profileImg.addEventListener('mouseover', () => {
 //     profileImg.style.display = "block";})
 // });
 
-video.addEventListener('mouseout', () => {
+video.addEventListener('mouseleave', () => {
         video.style.display = "none";
-        profileImg.style.display = "block";})
+        // video.style.opacity = "0";
+        profileImg.style.display = "block";
+        // profileImg.style.opacity = "1";
+
+    })
 
 // Add skills to html by DOM
 let middleContainer = document.querySelector(".middle-container");

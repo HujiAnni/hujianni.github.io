@@ -98,43 +98,43 @@ for (let i = 0; i < portfolios.name.length; i++){
 }
 
 
-// Profile image & video
-let profileImg = document.querySelector(".profile-img");
-let video = document.querySelector("iframe");
+// // Profile image & video
+// let profileImg = document.querySelector(".profile-img");
+// let video = document.querySelector("iframe");
 
 
-profileImg.addEventListener('mouseover', () => {
-    video.style.display = "block";
-    // video.style.opacity = "1";
-    profileImg.style.display = "none";
-    // profileImg.style.opacity = "0";
+// profileImg.addEventListener('mouseover', () => {
+//     video.style.display = "block";
+//     // video.style.opacity = "1";
+//     profileImg.style.display = "none";
+//     // profileImg.style.opacity = "0";
 
-});
-
-// let videoEnded = false;
-// const iframe = document.querySelector('iframe');
-// const player = new Vimeo.Player(iframe);
-
-//    let myPromise = new Promise(()=>{
-//     player.on('ended', function(){
-//         videoEnded = true;
-//     });
-//    })
-
-
-// myPromise.then(()=>{
-//     video.addEventListener('mouseout', () => {
-//     video.style.display = "none";
-//     profileImg.style.display = "block";})
 // });
 
-video.addEventListener('mouseleave', () => {
-        video.style.display = "none";
-        // video.style.opacity = "0";
-        profileImg.style.display = "block";
-        // profileImg.style.opacity = "1";
+// // let videoEnded = false;
+// // const iframe = document.querySelector('iframe');
+// // const player = new Vimeo.Player(iframe);
 
-    })
+// //    let myPromise = new Promise(()=>{
+// //     player.on('ended', function(){
+// //         videoEnded = true;
+// //     });
+// //    })
+
+
+// // myPromise.then(()=>{
+// //     video.addEventListener('mouseout', () => {
+// //     video.style.display = "none";
+// //     profileImg.style.display = "block";})
+// // });
+
+// video.addEventListener('mouseleave', () => {
+//         video.style.display = "none";
+//         // video.style.opacity = "0";
+//         profileImg.style.display = "block";
+//         // profileImg.style.opacity = "1";
+
+//     })
 
 // Add skills to html by DOM
 let middleContainer = document.querySelector(".middle-container");

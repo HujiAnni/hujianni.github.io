@@ -21,8 +21,8 @@
 // });
 
 const skills = {
-  name: ["Data Science", "Web Development", "CRM & CDP", "Digital Marketing"],
-  id: ["data-science", "web-development", "crm", "digital-marketing"],
+  name: ["Data Science", "Web Development", "CRM & CDP", "Email Marketing"],
+  id: ["data-science", "web-development", "crm", "email-marketing"],
   desc: [
     "Generate data-driven business insights and action plans by exploratory and predictive analysis and data visualization.",
     "Build and design front-end and back-end of interactive and engaging web apps with personalized treatment.",

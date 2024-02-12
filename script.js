@@ -45,7 +45,7 @@ const portfolios = {
     "Science Of Deduction",
     "Horse Race Simulation",
     "Game of Life",
-    "Game: Protect the Larva",
+    "Protect the Larva",
   ],
   id: [
     "map",

@@ -44,8 +44,18 @@ const portfolios = {
     "EYEs On You",
     "Science Of Deduction",
     "Horse Race Simulation",
+    "Game of Life",
+    "Game: Protect the Larva",
   ],
-  id: ["map", "bus", "eye", "deduction", "horse-race"],
+  id: [
+    "map",
+    "bus",
+    "eye",
+    "deduction",
+    "horse-race",
+    "game-of-life",
+    "protect-the-larva",
+  ],
   desc: [
     `<p>This Project is a map featuring all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of 2019. </p>
     <p>The map is built and customized with Mapbox API. The data is shown in two forms: Heat Map and by Cluster.</p> `,
@@ -64,6 +74,18 @@ const portfolios = {
     `
     <p>This Project is all about randomness.</p>
     <p>Before starting the game, pick a horse you bet will win and press any key to start the race. Once you press the key, the race will start in 3 seconds countdown and the horses will move at random speeds. The result will be shown after the match finished.</p>`,
+    `<p>This Project is based on Conway's Game of Life, which mimic the rule of lives following the following rules:</p>
+    <ol>
+    <li>Any live cell with fewer than two live neighbours dies.</li>
+    <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+    <li>Any live cell with more than three live neighbours dies.</li>
+    <li>Any dead cell with exactly three live neighbours becomes a live cell.</li>
+    </ol>
+    <p>The play can start with creating the cells create random symbosis by either click on the "GENERATE RANDOM SYMBOSIS" button or click on the cells directly. Click "START GAME" button and the simulation will start.</p>`,
+    `<p>This Project is coded along with @Frankslaboratory tutorial video. Some adjustment was made for improved performance and clarity of the game.</p>
+    <p>When the page is loaded, the game starts. Click within the frame to move your charater around. Push the eggs or the hatched larvas towards the bushes above and they're be safe (and you score 1 point)!</p>
+    <p>You can also push the unhatched eggs to the bushes before they are hatched to win the point.</p>
+    <p>Push away the enemies (those green toads) to protect the larva - or else you'll lost one, and if you lose 5 in total, you lost!</p>`,
   ],
   img_src: [
     "images/portfolios/crime-map.jpg",
@@ -71,6 +93,8 @@ const portfolios = {
     "https://pyxis.nymag.com/v1/imgs/91e/001/973cb64ce94251d70694bcc566c39fb172-24-frankenstein.2x.rsocial.w600.jpg",
     "images/portfolios/sherlock.jpg",
     "https://media.istockphoto.com/id/511801274/vector/jockey-on-horse.jpg?s=612x612&w=0&k=20&c=8okiQUOClXm1kRFr16IFsxzm7VPZM8QYwoFH0_e9C9Y=",
+    "images/portfolios/Animated_gameoflife.gif",
+    "images/portfolios/demo.png",
   ],
   project_link: [
     "https://github.com/HujiAnni/Crime-Map",
@@ -78,6 +102,8 @@ const portfolios = {
     "https://github.com/HujiAnni/eyes",
     "https://github.com/HujiAnni/The-Science-Of-Deduction",
     "https://github.com/HujiAnni/Horse-Racing-Simulation",
+    "https://github.com/HujiAnni/Game-Of-Life",
+    "https://github.com/HujiAnni/Protect-the-Larva",
   ],
   demo_link: [
     "https://hujianni.github.io/Crime-Map",
@@ -85,6 +111,8 @@ const portfolios = {
     "https://hujianni.github.io/eyes",
     "https://hujianni.github.io/The-Science-Of-Deduction",
     "https://hujianni.github.io/Horse-Racing-Simulation",
+    "https://hujianni.github.io/Game-Of-Life/",
+    "https://hujianni.github.io/Protect-the-Larva/",
   ],
   landing_page: [
     "/portfolios/crime.html",
@@ -92,6 +120,8 @@ const portfolios = {
     "/portfolios/eyes.html",
     "/portfolios/deduction.html",
     "/portfolios/horse-race.html",
+    "/portfolios/game-of-life.html",
+    "/portfolios/protect-the-larva.html",
   ],
 };
 

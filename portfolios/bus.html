@@ -1,99 +1,184 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>EYEs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <title>EYEs</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Lato&family=Sacramento&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="/css/portfolios.css">
-</head>
-<body>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth&family=Lato&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/portfolios.css" />
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
-        <div class="container-fluid">
-          <a class="navbar-brand brand-custom" href="#home">JENNIFER HU</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="../index.html#skills">Skills</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link nav-link-custom dropdown-toggle" href="../index.html#portfolios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Portfolios
-                </a>
-                <ul class="dropdown-menu dropdown-custom">
-                  
-                </ul>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="../index.html#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="container-fluid">
+        <a class="navbar-brand brand-custom" href="#home">JENNIFER HU</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-custom"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="../index.html#skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link nav-link-custom dropdown-toggle"
+                href="../index.html#portfolios"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Portfolios
+              </a>
+              <ul class="dropdown-menu dropdown-custom"></ul>
+            </li>
 
-  <main class="landing">
-    
-    <h2 class="display-5 fw-bold align-center">Real Time Bus Tracker</h2>
-    <hr>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="../index.html#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="landing">
+      <h2 class="display-5 fw-bold align-center">Real Time Bus Tracker</h2>
+      <hr />
       <div class="row align-items-md-stretch">
         <div class="col-md-6">
           <div class="p-5 rounded-3 desc">
             <p class="col-md-8 fs-5"></p>
-            <img src="/images/portfolios/BusTracker.jpg" alt="Real Time Bus Tracker" style="width: 75%; border-radius: 2%;">
+            <img
+              src="/images/portfolios/BusTracker.jpg"
+              alt="Real Time Bus Tracker"
+              style="width: 75%; border-radius: 2%"
+            />
             <p class="col-md-6 fs-5"></p>
-            <p class="fs-5">This Project is a map showing bus stops between MIT and Harvard. </p>
-            <p class="fs-5">The map is built and customized using Mapbox API. </p>
-            <p class="fs-5">When click on the button on the top right, an animation will show with an marker the route of the bus from MIT to Harvard. </p>
+            <p class="fs-5 text-start">
+              This Project is a map showing bus stops between MIT and Harvard.
+            </p>
+            <p class="fs-5 text-start">
+              The map is built and customized using Mapbox API.
+            </p>
+            <p class="fs-5 text-start">
+              When click on the button on the top right, an animation will show
+              with an marker the route of the bus from MIT to Harvard.
+            </p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="p-5 rounded-3 links">
-                <h2 class="fs-4 text-start">Project Language</h2>
-                <p class="fs-5 text-start">Javascript, CSS, HTML</p>
-                <h2 class="fs-4 text-start">Project Details</h2>
-                <p class="fs-5 text-start">See it in action <a href="https://hujianni.github.io/Real-Time-Bus-Tracker" target="_blank">here</a>.</p>
-                <h2 class="fs-4 text-start">Project Repo</h2>
-                <p class="fs-5 text-start">GitHub Repo <a href="https://github.com/HujiAnni/Real-Time-Bus-Tracker" target="_blank">here</a>.</p>
+            <h2 class="fs-4 text-start">Project Language</h2>
+            <p class="fs-5 text-start">Javascript, CSS, HTML</p>
+            <h2 class="fs-4 text-start">Project Details</h2>
+            <p class="fs-5 text-start">
+              See it in action
+              <a
+                href="https://hujianni.github.io/Real-Time-Bus-Tracker"
+                target="_blank"
+                >here</a
+              >.
+            </p>
+            <h2 class="fs-4 text-start">Project Repo</h2>
+            <p class="fs-5 text-start">
+              GitHub Repo
+              <a
+                href="https://github.com/HujiAnni/Real-Time-Bus-Tracker"
+                target="_blank"
+                >here</a
+              >.
+            </p>
 
-                <h2 class="fs-4 text-start">Project Date</h2>
-                <p class="fs-5 text-start">November 2022</p>
-                <h2 class="fs-4 text-start">Client</h2>
-                <p class="fs-5 text-start">MIT xPro</p>
-                <p class="fs-5 text-start"></p>
+            <h2 class="fs-4 text-start">Project Date</h2>
+            <p class="fs-5 text-start">November 2022</p>
+            <h2 class="fs-4 text-start">Client</h2>
+            <p class="fs-5 text-start">MIT xPro</p>
+            <p class="fs-5 text-start"></p>
 
-            <a href="/index.html#portfolios"><button class="btn btn-outline-secondary text-start" type="button">BACK</button></a>
+            <a href="/index.html#portfolios"
+              ><button
+                class="btn btn-outline-secondary text-start"
+                type="button"
+              >
+                BACK
+              </button></a
+            >
           </div>
         </div>
-        
       </div>
-  </main>
-  <br>
+    </main>
+    <br />
 
-  <div class="bottom-container">
-    <a class="footer-link" href="https://www.linkedin.com/in/jianni-jennifer-hu-2b110910b/" target="_blank">LinkedIn</a>
-    <a class="footer-link" href="https://github.com/HujiAnni" target="_blank">GitHub</a>
-    <a class="footer-link" href="https://www.facebook.com/HujiAnni" target="_blank">Facebook</a>
-    <a class="footer-link" href="mailto:jh2585@cornell.edu">Email</a>
-    <p class="copyright">&copy; 2022 Jennifer Hu.</p>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-  <script src="/script.js"></script>
-</body>
-
+    <div class="bottom-container">
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/jennifer-jianni-hu/"
+        target="_blank"
+        >LinkedIn</a
+      >
+      <a class="footer-link" href="https://github.com/HujiAnni" target="_blank"
+        >GitHub</a
+      >
+      <a
+        class="footer-link"
+        href="https://www.facebook.com/HujiAnni"
+        target="_blank"
+        >Facebook</a
+      >
+      <a class="footer-link" href="mailto:jh2585@cornell.edu">Email</a>
+      <p class="copyright">&copy; 2024 Jennifer Hu.</p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
 </html>

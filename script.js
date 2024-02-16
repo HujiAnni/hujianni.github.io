@@ -57,7 +57,7 @@ const portfolios = {
     "protect-the-larva",
   ],
   desc: [
-    `<p>This Project is a map featuring all valid felony, misdemeanor, and violation crimes reported to the New York City Police Department (NYPD) from 2006 to the end of 2019. </p>
+    `<p>This Project is a map featuring all shooting incidents reported to the New York City Police Department (NYPD) from 2006 to the end of 2022. All records were fetched. </p>
     <p>The map is built and customized with Mapbox API. The data is shown in two forms: Heat Map and by Cluster.</p> `,
     `<p>This Project is a map showing bus stops between MIT and Harvard. </p>
     <p>The map is built and customized using Mapbox API. </p>

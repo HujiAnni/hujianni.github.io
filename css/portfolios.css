@@ -1,18 +1,18 @@
 .landing {
-    margin: 10% auto 10% auto;
+  margin: 10% auto 10% auto;
 }
 
 .desc {
-    border: none;
-    background-color: #BF9270;
-    color: #FFFBE9;
-    }
+  border: none;
+  background-color: #bf9270;
+  color: #fffbe9;
+}
 
 .links {
-    border: none;
-    background-color: #FFEDDB;
+  border: none;
+  background-color: #ffeddb;
 }
 
 body {
-    background-color: #FFF8E1;
+  background-color: #fff8e1;
 }

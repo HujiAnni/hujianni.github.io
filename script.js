@@ -63,21 +63,14 @@ const portfolios = {
     <p>The map is built and customized with Mapbox API. The data is shown in two forms: Heat Map and by Cluster.</p> `,
     `<p>This Project is a full-stack web app built with next.js as frontend and Strapi with PostgreSQL as backend and database.</p>
     <p>The frontend was deployed with Vercel, while the backend was deployed with Render, using Cloudinary hosting all images and media used on the web app</p> `,
-    `<p>This Project is coded along with @Frankslaboratory tutorial video. Some adjustment was made for improved performance and clarity of the game.</p>
-    <p>When the page is loaded, the game starts. Click within the frame to move your charater around. Push the eggs or the hatched larvas towards the bushes above and they're be safe (and you score 1 point)!</p>
-    <p>You can also push the unhatched eggs to the bushes before they are hatched to win the point.</p>
-    <p>Push away the enemies (those green toads) to protect the larva - or else you'll lost one, and if you lose 5 in total, you lost!</p>`,
-    `<p>This Project is based on Conway's Game of Life, which mimic the rule of lives following the following rules:</p>
-    <ol>
-    <li>Any live cell with fewer than two live neighbours dies.</li>
-    <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
-    <li>Any live cell with more than three live neighbours dies.</li>
-    <li>Any dead cell with exactly three live neighbours becomes a live cell.</li>
-    </ol>
+    `
+    <p>This project is a 2D game mimicing 3D physical interactions. When the page is loaded, the game starts. Click within the frame to move your charater around. Push the eggs or the hatched larvas towards the bushes above and they're be safe.</p>
+    <p>Push away the enemies to protect the larva.</p>`,
+    `<p>This Project is based on Conway's Game of Life.</p>
     <p>The play can start with creating the cells create random symbosis by either click on the "GENERATE RANDOM SYMBOSIS" button or click on the cells directly. Click "START GAME" button and the simulation will start.</p>`,
     `<p>This Project is a map showing bus stops between MIT and Harvard. </p>
     <p>The map is built and customized using Mapbox API. </p>
-    <p>When click on the button on the top right, an animation will show with an marker the route of the bus from MIT to Harvard. </p>`,
+    `,
     `
     <p>This Project is all about randomness.</p>
     <p>Before starting the game, pick a horse you bet will win and press any key to start the race. Once you press the key, the race will start in 3 seconds countdown and the horses will move at random speeds. The result will be shown after the match finished.</p>`,
@@ -271,8 +264,8 @@ for (let i = 0; i < portfolios.name.length; i++) {
   portfolioFlipCardGrid.classList.add(
     "col",
     "col-lg-4",
-    "col-6",
-    "mb-4",
+    "col-md-6",
+    // "mb-4",
     "col-sm-12",
     "m-auto"
   );
@@ -304,16 +297,21 @@ for (let i = 0; i < portfolios.name.length; i++) {
   portfolioFlipCardBack.classList.add(
     "card-body",
     "portfolio__description",
-    "align-self-center"
+    "align-self-center",
+    "align-middle"
   );
   let portfolioFlipCardBackTitle = document.createElement("h5");
   portfolioFlipCardBackTitle.innerHTML = portfolios.name[i];
   portfolioFlipCardBackTitle.classList.add("card-title");
   let portfolioFlipCardBackText = document.createElement("p");
   portfolioFlipCardBackText.innerHTML = portfolios.desc[i];
-  portfolioFlipCardBackText.classList.add("portfolio-desc");
-
-  portfolioFlipCardBackText.classList.add("card-text", "align-self-center");
+  portfolioFlipCardBackText.classList.add(
+    "portfolio-desc",
+    "card-text",
+    "align-self-center",
+    "align-middle"
+  );
+  // portfolioFlipCardBackText.classList.add();
   let linkProject = document.createElement("a");
   linkProject.href = portfolios.landing_page[i];
   linkProject.classList.add("card-link", "card-link-custom");

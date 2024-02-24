@@ -93,12 +93,21 @@
             />
             <p class="col-md-6 fs-5"></p>
             <p class="fs-5 text-start">
-              This Project is based on Conway's Game of Life.
+              This Project is based on Conway's Game of Life, which mimic the
+              rule of lives following the following rules:
             </p>
-            <p class="fs-5 text-start">
-              Some adjustment was made for improved performance and clarity of
-              the game.
-            </p>
+            <ol class="fs-5 text-start">
+              <li>Any live cell with fewer than two live neighbours dies.</li>
+              <li>
+                Any live cell with two or three live neighbours lives on to the
+                next generation.
+              </li>
+              <li>Any live cell with more than three live neighbours dies.</li>
+              <li>
+                Any dead cell with exactly three live neighbours becomes a live
+                cell.
+              </li>
+            </ol>
             <p class="fs-5 text-start">
               The play can start with creating the cells (which will show up
               grids based on the size of the screen), create random symbosis by

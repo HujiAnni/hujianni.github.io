@@ -2,7 +2,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 h1 {
@@ -521,23 +521,97 @@ p.copyright {
 
   .portfolio-img {
     width: 80vw;
-    height: 60vw;
+    height: 40vw;
   }
 
   .portfolio-desc {
-    font-size: larger;
+    font-size: 1rem;
   }
 
   h5.card-title {
-    font-size: larger;
+    font-size: 1.2rem;
   }
 
   .card-link {
-    font-size: larger;
+    font-size: 1rem;
   }
 }
 
 /* Media Responsive - mobile screen*/
-@media screen and (min-width: 320px) and (max-width: 640px) {
+@media screen and (min-width: 280px) and (max-width: 640px) {
   /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+  .top-container {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+    margin: auto;
+  }
+
+  .social {
+    margin: auto;
+  }
+
+  .skill-row,
+  .portfolio,
+  .contact-me {
+    /* width: 50%; */
+    margin: 2.5rem auto;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .profile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.25fr 0.25fr 0.5fr;
+    grid-template-areas:
+      "img"
+      "title"
+      "txt";
+    font-size: small;
+  }
+
+  .profile-img {
+    min-width: 15rem;
+    margin: 2.5% auto;
+  }
+
+  .profile-title {
+    text-align: center;
+    margin: 2.5% auto;
+  }
+
+  .profile-txt {
+    margin: 0;
+    text-align: center;
+  }
+
+  .intro-sent {
+    text-align: center;
+    margin: auto;
+    font-size: 1.125rem;
+  }
+
+  .middle-container {
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    background-color: #fff8e1;
+    background: linear-gradient(0deg, #ffbc80, #fff8e1, #fff8e1);
+    background-size: 100% 200%;
+  }
+
+  .portfolio-img {
+    width: 80vw;
+    height: 90vw;
+  }
+
+  .portfolio-desc {
+    font-size: 0.9rem;
+  }
+
+  h5.card-title {
+    font-size: 1rem;
+  }
+
+  .card-link {
+    font-size: 0.9rem;
+  }
 }

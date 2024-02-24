@@ -16,3 +16,8 @@
 body {
   background-color: #fff8e1;
 }
+
+p {
+  text-align: center;
+  font-size: small;
+}

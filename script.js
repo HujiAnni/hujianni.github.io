@@ -96,7 +96,7 @@ const portfolios = {
   ],
   project_link: [
     "https://github.com/HujiAnni/Crime-Map",
-    "https://github.com/HujiAnni/Restaurant-App-Backend",
+    "https://github.com/HujiAnni/Restaurant-App-Frontend",
     "https://github.com/HujiAnni/Protect-the-Larva",
     "https://github.com/HujiAnni/Game-Of-Life",
     "https://github.com/HujiAnni/Real-Time-Bus-Tracker",

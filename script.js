@@ -67,7 +67,7 @@ const portfolios = {
     <p>This project is a 2D game mimicing 3D physical interactions. When the page is loaded, the game starts. Click within the frame to move your charater around. Push the eggs or the hatched larvas towards the bushes above and they're be safe.</p>
     <p>Push away the enemies to protect the larva.</p>`,
     `<p>This Project is based on Conway's Game of Life.</p>
-    <p>The play can start with creating the cells create random symbosis by either click on the "GENERATE RANDOM SYMBOSIS" button or click on the cells directly. Click "START GAME" button and the simulation will start.</p>`,
+    <p>The play can start with creating the cells create random symbosis by either click on the "GENERATE RANDOM SYMBOSIS" button or click on the cells directly. Click "START GAME" to start.</p>`,
     `<p>This Project is a map showing bus stops between MIT and Harvard. </p>
     <p>The map is built and customized using Mapbox API. </p>
     `,
